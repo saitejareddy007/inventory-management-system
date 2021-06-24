@@ -1,26 +1,26 @@
 # inventory-management-system
-To run project use: npm start
+To run project use: npm start<br />
 
-Api contract:
-url: http://localhost:7007/createProduct
-Request params:
+Api contract:<br />
+url: http://localhost:7007/createProduct <br />
+Request params:<br />
 {
   "title": 12,
   "price": 100
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok"
-}
+}<br />
 
 
-url: http://localhost:7007/getProductData
-Request params:
+url: http://localhost:7007/getProductData<br />
+Request params:<br />
 {
   "skuId": 1
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok",
@@ -35,45 +35,45 @@ Response:
     }
 }
 
-url: http://localhost:7007/addInventoryToWarehouse
-Request params:
+url: http://localhost:7007/addInventoryToWarehouse<br />
+Request params:<br />
 {
     "skuId": 1,
     "warehouseId": 1,
     "quantity": 10,
     "userId": "test"
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok"
 }
 
-url: http://localhost:7007/pushInventoryToReservedOrDamaged
-Request params:
+url: http://localhost:7007/pushInventoryToReservedOrDamaged<br />
+Request params:<br />
 {
     "skuId": 1,
     "warehouseId": 1,
     "quantity": 10,
     "userId": "test",
     "actionType": "reserved" // possible value ['reserved', 'damaged']
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok"
 }
 
-url: http://localhost:7007/getMasterInventoryViewWithSkuId
-Request params:
+url: http://localhost:7007/getMasterInventoryViewWithSkuId<br />
+Request params:<br />
 {
     "skuId": 1,
     "warehouseId": 1,
     "quantity": 10,
     "userId": "test",
     "actionType": "reserved"
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok",
@@ -97,16 +97,16 @@ Response:
             }
         ]
     }
-}
+}<br />
 
-url: http://localhost:7007/getProductsWithFilter
-Request params:
+url: http://localhost:7007/getProductsWithFilter<br />
+Request params:<br />
 {
     "size":2,
     "minPrice": 50,
     "maxPrice": 101
-}
-Response:
+}<br />
+Response:<br />
 {
     "code": 200,
     "msg": "ok",
