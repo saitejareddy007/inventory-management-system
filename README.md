@@ -1,4 +1,6 @@
 # inventory-management-system
+Database name: invData
+Need to create sequence collection: db.sequence.insert({seqName: 'skuIdSequence', seqId: 100});
 To run project use: npm start<br />
 
 Api contract:<br />
